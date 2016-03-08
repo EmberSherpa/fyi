@@ -21,7 +21,7 @@ export default Ember.Controller.extend({
 
 The `category` query parameter is defined on the parent route. The most directly way to access the `category` query parameter is by injecting the parent controller onto the nested route's controller.
 
-```
+```javascript
 // controllers/posts/latest.js
 import Ember from 'ember';
 export default Ember.Controller.extend({
@@ -40,7 +40,7 @@ This will allow you to access posts controller on `posts` property in your templ
 
 An alternative way to access the parent's query parameter is via `this.paramsFor`.
 
-```
+```javascript
 // routes/posts/latest.js
 import Ember from 'ember';
 export default Ember.Route.extend({
